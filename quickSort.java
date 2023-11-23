@@ -25,7 +25,7 @@ class quickSort {
         return objects;
     }
 
-    public static void quicksort(Producto[] array) {
+    private void quicksort(Producto[] array) {
         qs(array, 0, array.length - 1);
     }
 
@@ -54,22 +54,5 @@ class quickSort {
             qs(array, limInferior, der);
         if (izq < limSuperior)
             qs(array, izq, limSuperior);
-    }
-    //Esta mistiherramienta nos servira mas tardesisni
-    public static int BBinaria(String[] array, String busqueda) {
-        if (array.length == 0)
-            return -1;
-        int mitad, inf = 0, sup = array.length - 1;
-        do {
-            mitad = (inf + sup) / 2;
-            if (busqueda.compareTo(array[mitad]) < 0)
-                inf = mitad + 1;
-            else
-                sup = mitad - 1;
-        } while (array[mitad].compareTo(busqueda) != 0 && inf <= sup);
-        if (array[mitad].compareTo(busqueda) == 0)
-            return mitad;
-        else
-            return -1;
     }
 }

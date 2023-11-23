@@ -5,9 +5,15 @@ public class ControlProducto {
     private int max;
 
     public ControlProducto() {
+        SaveRecoverSystem srs = new SaveRecoverSystem();
+        try {
+            productos = srs.readArray();
+        } catch(Exception e) {
+            e.printStackTrace();
+            productos = new Producto[max];
+        }
         max=20;
         con=-1;
-        productos = new Producto[max];
     }
 
     public String buscarPorNombre(String nombre) {
@@ -18,6 +24,31 @@ public class ControlProducto {
     public String buscarPorCodigo(int codigo) {
         busquedaBinaria bb = new busquedaBinaria(productos);
         return productos[bb.buscarBinariamenteentePerCodigo(codigo)].toString();
+    }
+
+    //acuerdeze solo la superclase atributos, no los base, los de superclasepoderosa, ya tu das el  tratamiento de copia de datos desde la interfas de antiguos a nuevos
+    //WAWAWAWAWAWA ALERTA SISMICA ALERTA SISMICA
+    public String cambioProducto(String nombre, Producto nuevoProducto) {
+        busquedaBinaria bb = new busquedaBinaria(productos);
+        int index = bb.buscarBinariamenteentePerNombre(nombre);
+        if(index==-1)return "No se encontro el producto por nombre";
+        productos[index]=nuevoProducto;
+        return "Producto actualizado correctamente";
+    }
+
+    public double calcularPrecioVentaPorCodigo(int codigo) {
+        busquedaBinaria bb = new busquedaBinaria(productos);
+        int index = bb.buscarBinariamenteentePerCodigo(codigo);
+        if(index==ERROR)return ERROR;//fua epico
+        return productos[index].precioVenta();
+    }
+
+    public double calcularPrecioVentaGeneral() {
+        double total = 0;
+        for(Producto prod : productos) {
+            total+=prod.precioVenta();
+        }
+        return total;
     }
 
     //El producto lo creas con la info de la interfas fresquesita y lo pasas wuawuawua
