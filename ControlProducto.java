@@ -1,7 +1,7 @@
 public class ControlProducto {
     static final int ERROR = -1;
     private Producto productos[];
-    private int con;
+    private int cont;
     private int max;
 
     public ControlProducto() {
@@ -13,7 +13,7 @@ public class ControlProducto {
             productos = new Producto[max];
         }
         max=20;
-        con=-1;
+        cont=-1;
     }
 
     public String buscarPorNombre(String nombre) {
@@ -56,14 +56,25 @@ public class ControlProducto {
         int index = indexToAddItemFrom(productos);
         if(index == ERROR)return "no se puede añadir";
         productos[index]=objeto;
+        cont++;
         return "Producto añadido";
     }
 
     public String bajas(String nombre) {
         int index = getIndexFromName(nombre);
         if(index == ERROR)return "Item no encontrado";
-        productos[index] = null;
+        safeDelete(index);
+        cont--;
         return "Producto dado de baja";
+    }
+
+    private void safeDelete(int index) {
+        for(int i = 0; i < max; i++) {
+            if(i >= index) {
+                productos[index] = productos[index+1];
+            }
+            cont--;
+        }
     }
 
     public String reporteGeneral() {

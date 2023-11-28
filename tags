@@ -83,7 +83,7 @@ codigo	Producto.java	/^    private int codigo;$/;"	f	class:Producto	file:
 codigoSupAlimentaria	ProductoRefrigerado.java	/^    private int codigoSupAlimentaria;$/;"	f	class:ProductoRefrigerado	file:
 comparator	burbujaMetodo.java	/^    private boolean comparator(Producto productos[], int startpos, int field,boolean inverse) {$/;"	m	class:burbujaMetodo	file:
 comparator	insertMetodo.java	/^    private boolean comparator(Producto alumnos[], int k, Producto aux, int field,boolean invers/;"	m	class:insertMetodo	file:
-con	ControlProducto.java	/^    private int con;$/;"	f	class:ControlProducto	file:
+cont	ControlProducto.java	/^    private int cont;$/;"	f	class:ControlProducto	file:
 costoProduccion	Producto.java	/^    private double costoProduccion;$/;"	f	class:Producto	file:
 costoTransporte	OTROS_COSTOS.java	/^    public final static double costoTransporte=300;$/;"	f	interface:OTROS_COSTOS
 createFile	SaveRecoverSystem.java	/^    public void createFile() {$/;"	m	class:SaveRecoverSystem
@@ -142,6 +142,7 @@ reporteCategoriasDescendienteInsert	ControlProducto.java	/^    public String rep
 reporteDescendenteBurbuja	ControlProducto.java	/^    public String reporteDescendenteBurbuja() {$/;"	m	class:ControlProducto
 reporteDescendenteQuickSort	ControlProducto.java	/^    public String reporteDescendenteQuickSort() {$/;"	m	class:ControlProducto
 reporteGeneral	ControlProducto.java	/^    public String reporteGeneral() {$/;"	m	class:ControlProducto
+safeDelete	ControlProducto.java	/^    private void safeDelete(int index) {$/;"	m	class:ControlProducto	file:
 saveArray	SaveRecoverSystem.java	/^    public void saveArray(Producto[] array) throws IOException, FileNotFoundException {$/;"	m	class:SaveRecoverSystem
 setCodigo	Producto.java	/^    public void setCodigo(int codigo) {$/;"	m	class:Producto
 setCodigoSupAlimentaria	ProductoRefrigerado.java	/^    public void setCodigoSupAlimentaria(int codigoSupAlimentaria) {$/;"	m	class:ProductoRefrigerado
