@@ -52,7 +52,7 @@ PF	PF.java	/^public class PF extends javax.swing.JInternalFrame {$/;"	c
 PR	PR.java	/^    public PR() {$/;"	m	class:PR
 PR	PR.java	/^public class PR extends javax.swing.JInternalFrame {$/;"	c
 Producto	Producto.java	/^    public Producto(String nombre, int codigo, String fecha_caducidad, int numLote, double costo/;"	m	class:Producto
-Producto	Producto.java	/^public abstract class Producto {$/;"	c
+Producto	Producto.java	/^public abstract class Producto implements Serializable {$/;"	c
 ProductoCongelado	ProductoCongelado.java	/^    public ProductoCongelado(float tempCongelacion, String nombre, int codigo, String fecha_cadu/;"	m	class:ProductoCongelado
 ProductoCongelado	ProductoCongelado.java	/^public class ProductoCongelado extends Producto implements OTROS_COSTOS {$/;"	c
 ProductoFresco	ProductoFresco.java	/^    public ProductoFresco(String fechaEnvasado, String paisOrigen, String nombre, int codigo, St/;"	m	class:ProductoFresco
@@ -265,8 +265,10 @@ setNombre	Producto.java	/^    public void setNombre(String nombre) {$/;"	m	class
 setNumLote	Producto.java	/^    public void setNumLote(int numLote) {$/;"	m	class:Producto
 setPaisOrigen	ProductoFresco.java	/^    public void setPaisOrigen(String paisOrigen) {$/;"	m	class:ProductoFresco
 setTempCongelacion	ProductoCongelado.java	/^    public void setTempCongelacion(float tempCongelacion) {$/;"	m	class:ProductoCongelado
+srs	ControlProducto.java	/^    SaveRecoverSystem srs;$/;"	f	class:ControlProducto
 swap	burbujaMetodo.java	/^    private void swap(Producto productos[], int startposswap) {$/;"	m	class:burbujaMetodo	file:
 tempCongelacion	ProductoCongelado.java	/^    private float tempCongelacion;$/;"	f	class:ProductoCongelado	file:
+test	ControlProducto.java	/^    public void test() {$/;"	m	class:ControlProducto
 testPutaCola	testPutaCola.java	/^class testPutaCola {$/;"	c
 toString	Producto.java	/^    public String toString() {$/;"	m	class:Producto
 toString	ProductoCongelado.java	/^    public String toString() {$/;"	m	class:ProductoCongelado

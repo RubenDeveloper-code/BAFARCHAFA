@@ -3,9 +3,10 @@ public class ControlProducto {
     private Producto productos[];
     private int cont;
     private int max;
+    SaveRecoverSystem srs;
 
     public ControlProducto() {
-        SaveRecoverSystem srs = new SaveRecoverSystem();
+        srs = new SaveRecoverSystem();
         try {
             productos = srs.readArray();
         } catch(Exception e) {
@@ -14,6 +15,13 @@ public class ControlProducto {
         }
         max=20;
         cont=-1;
+    }
+    public void test() {
+        try {
+            srs.saveArray(productos);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public String buscarPorNombre(String nombre) {

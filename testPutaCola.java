@@ -5,5 +5,6 @@ class testPutaCola {
         control.altas(new ProductoCongelado(0, "a", 0, "a", 0, 0));
         control.altas(new ProductoCongelado(0, "a", 0, "a", 0, 0));
         System.out.print(control.reporteDescendenteQuickSort());
+        control.test();
     }
 }
