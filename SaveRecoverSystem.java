@@ -22,6 +22,7 @@ class SaveRecoverSystem {
         }
     }
 
+    //acuerdate de llamar esta func
     public void saveArray(Producto[] array) throws IOException, FileNotFoundException {
         try (
                 ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileName))) {
