@@ -46,6 +46,7 @@ public class ControlProducto {
     public double calcularPrecioVentaGeneral() {
         double total = 0;
         for(Producto prod : productos) {
+            if(prod==null)continue;
             total+=prod.precioVenta();
         }
         return total;
@@ -80,6 +81,7 @@ public class ControlProducto {
     public String reporteGeneral() {
         String res = "";
         for(Producto producto : productos) {
+            if(producto==null)continue;
             res+=producto.toString();
         }
         return res;
@@ -140,6 +142,7 @@ public class ControlProducto {
     public Producto[] getSubStringFrescos() {
         Producto tempProds[] = new Producto[max];
         for(Producto prod : productos) {
+            if(prod==null)continue;
             if(prod instanceof ProductoFresco) {
                 tempProds[indexToAddItemFrom(tempProds)]=prod;
             }
@@ -150,6 +153,7 @@ public class ControlProducto {
     public Producto[] getSubStringCongelados() {
         Producto tempProds[] = new Producto[max];
         for(Producto prod : productos) {
+            if(prod==null)continue;
             if(prod instanceof ProductoCongelado) {
                 tempProds[indexToAddItemFrom(tempProds)]=prod;
             }
@@ -160,6 +164,7 @@ public class ControlProducto {
     public Producto[] getSubStringRefrigerado() {
         Producto tempProds[] = new Producto[max];
         for(Producto prod : productos) {
+            if(prod==null)continue;
             if(prod instanceof ProductoRefrigerado) {
                 tempProds[indexToAddItemFrom(tempProds)]=prod;
             }
@@ -175,7 +180,7 @@ public class ControlProducto {
     }
 
     private int getIndexFromName(String name) {
-        for(int i = 0; i < productos.length; i++) {
+        for(int i = 0; i < utilities.initLength(productos); i++) {
             if(productos[i].getNombre().equals(name))return i;
         }
         return -1;

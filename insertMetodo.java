@@ -22,13 +22,14 @@ class insertMetodo {
     private String array2String(Producto[] objs) {
         String res="";
         for(Producto obj:objs ) {
-            res += obj.toString();
+            if(obj==null)continue;
+            res += obj.toString()+'\n';
         }
         return res;
     }
 
     private void IncersionMetodoPorCampo(Producto []array,int campo, boolean inverso) {
-        int i, k, n_elementos = array.length;
+        int i, k, n_elementos = utilities.initLength(array);
         Producto aux;
         for(i=1; i<n_elementos; i++)
         {

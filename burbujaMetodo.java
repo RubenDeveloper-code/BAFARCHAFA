@@ -18,7 +18,7 @@ public class burbujaMetodo {
     }
 
     private void OrdenarProductoPorCampo(Producto[] productos, int campo, boolean desendiente) {
-        int len = productos.length, step = 0;
+        int len = utilities.initLength(productos), step = 0;
         boolean nskip = true;
         while(nskip && --len > 0) {
             nskip=false;
@@ -50,7 +50,8 @@ public class burbujaMetodo {
     private String printArray(Producto[] objs) {
         String res = "";
         for(Producto obj:objs ) {
-            res+=obj.toString();
+            if(obj==null)continue;
+            res+=obj.toString()+'\n';
         }
         return res;
     }

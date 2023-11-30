@@ -18,7 +18,7 @@ class busquedaBinaria {
     private int BBinaria(Producto[] array, String busqueda) {
         if (array.length == 0)
             return -1;
-        int mitad, inf = 0, sup = array.length - 1;
+        int mitad, inf = 0, sup = utilities.initLength(array) - 1;
         do {
             mitad = (inf + sup) / 2;
             if (busqueda.compareTo(array[mitad].getNombre()) < 0)
@@ -35,7 +35,7 @@ class busquedaBinaria {
     private int BBinariaCodigo(Producto[] array, int busqueda) {
         if (array.length == 0)
             return -1;
-        int mitad, inf = 0, sup = array.length - 1;
+        int mitad, inf = 0, sup = utilities.initLength(array) - 1;
         do {
             mitad = (inf + sup) / 2;
             if (busqueda > array[mitad].getCodigo())

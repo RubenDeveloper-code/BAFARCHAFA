@@ -9,6 +9,7 @@ class quickSort {
     public String getOrderedByNameAscendentStr() {
         String res = "";
         for(Producto producto : objects) {
+            if(producto==null)continue;
             res+=producto.toString()+"\n";
         }
         return res;
@@ -16,7 +17,7 @@ class quickSort {
 
     public String getOrderByNameDesendentStr() {
         String res = "";
-        for(int i = objects.length-1; i > 0; i--) {
+        for(int i = utilities.initLength(objects)-1; i >= 0; i--) {
             res+=objects[i].toString()+"\n";
         }
         return res;
@@ -26,7 +27,7 @@ class quickSort {
     }
 
     private void quicksort(Producto[] array) {
-        qs(array, 0, array.length - 1);
+        qs(array, 0, utilities.initLength(array) - 1);
     }
 
     private static void qs(Producto[] array, int limInferior, int limSuperior) {

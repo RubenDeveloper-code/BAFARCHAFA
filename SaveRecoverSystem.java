@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.EOFException;
 import java.io.File;
 
 class SaveRecoverSystem {
@@ -31,8 +32,9 @@ class SaveRecoverSystem {
     public Producto[] readArray() throws IOException, ClassNotFoundException,FileNotFoundException {
         try (
                 ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName))) {
-            in.close();
             return (Producto[])in.readObject();
+        } catch(EOFException e) {
+            return new Producto[20];
         }
     }
 }
