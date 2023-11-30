@@ -10,9 +10,13 @@
 public class CambiosRefrigerados extends javax.swing.JInternalFrame {
 
     ControlProducto producto;
-    public CambiosRefrigerados(ControlProducto producto) {
+    public CambiosRefrigerados(ControlProducto producto,String nombre) {
         this.producto=producto;
         initComponents();
+        initiw(nombre);
+    }
+     public void initiw(String name){
+        nombre.setText(name);
     }
 
     /**
@@ -191,6 +195,8 @@ public class CambiosRefrigerados extends javax.swing.JInternalFrame {
        producto_.setFecha_caducidad(f_caducidad.getText());
        producto_.setCostoProduccion(Double.parseDouble(costo.getText()));
        producto.cambioProducto(producto_.getNombre(), producto_);
+       
+       texto.setText(producto.buscarPorNombre(nombre.getText()));
     }//GEN-LAST:event_realizarActionPerformed
 
     private void buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarActionPerformed

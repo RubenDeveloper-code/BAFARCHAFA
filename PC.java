@@ -15,6 +15,7 @@ public class PC extends javax.swing.JInternalFrame {
         this.producto=producto;
         initComponents();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

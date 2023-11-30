@@ -37,9 +37,6 @@ public class CP extends javax.swing.JFrame {
         reportes = new javax.swing.JMenu();
         buscar = new javax.swing.JMenu();
         cambios = new javax.swing.JMenu();
-        cambio_congelado = new javax.swing.JMenu();
-        cambio_fresco = new javax.swing.JMenu();
-        cambio_refrigerado = new javax.swing.JMenu();
         calcularPrecio = new javax.swing.JMenu();
         salir = new javax.swing.JMenu();
 
@@ -129,31 +126,11 @@ public class CP extends javax.swing.JFrame {
         jMenuBar1.add(buscar);
 
         cambios.setText("Cambios");
-
-        cambio_congelado.setText("Productos Congelados");
-        cambio_congelado.addMouseListener(new java.awt.event.MouseAdapter() {
+        cambios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cambio_congeladoMouseClicked(evt);
+                cambiosMouseClicked(evt);
             }
         });
-        cambios.add(cambio_congelado);
-
-        cambio_fresco.setText("Productos Frescos");
-        cambio_fresco.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cambio_frescoMouseClicked(evt);
-            }
-        });
-        cambios.add(cambio_fresco);
-
-        cambio_refrigerado.setText("Productos Refrigerados");
-        cambio_refrigerado.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cambio_refrigeradoMouseClicked(evt);
-            }
-        });
-        cambios.add(cambio_refrigerado);
-
         jMenuBar1.add(cambios);
 
         calcularPrecio.setText("Calcular precio");
@@ -229,24 +206,6 @@ public class CP extends javax.swing.JFrame {
         bajas.setVisible(true);
     }//GEN-LAST:event_bajasMouseClicked
 
-    private void cambio_congeladoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_congeladoMouseClicked
-       CambiosCongelado cambio= new CambiosCongelado(productos);
-       escritorio.add(cambio);
-       cambio.setVisible(true);
-    }//GEN-LAST:event_cambio_congeladoMouseClicked
-
-    private void cambio_frescoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_frescoMouseClicked
-        CambiosFrescos cambio = new CambiosFrescos(productos);
-        escritorio.add(cambio);
-        cambio.setVisible(true);
-    }//GEN-LAST:event_cambio_frescoMouseClicked
-
-    private void cambio_refrigeradoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_refrigeradoMouseClicked
-        CambiosRefrigerados cambio = new CambiosRefrigerados(productos);
-        escritorio.add(cambio);
-        cambio.setVisible(true);
-    }//GEN-LAST:event_cambio_refrigeradoMouseClicked
-
     private void calcularPrecioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularPrecioMouseClicked
         CalcularPrecio calcular = new CalcularPrecio(productos);
         escritorio.add(calcular);
@@ -258,6 +217,12 @@ public class CP extends javax.swing.JFrame {
         escritorio.add(buscar);
         buscar.setVisible(true);
     }//GEN-LAST:event_buscarMouseClicked
+
+    private void cambiosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambiosMouseClicked
+        CambiosPrincipal cambios = new CambiosPrincipal(productos);
+        escritorio.add(cambios);
+        cambios.setVisible(true);
+    }//GEN-LAST:event_cambiosMouseClicked
 
     /**
      * @param args the command line arguments
@@ -301,9 +266,6 @@ public class CP extends javax.swing.JFrame {
     private javax.swing.JMenu bajas;
     private javax.swing.JMenu buscar;
     private javax.swing.JMenu calcularPrecio;
-    private javax.swing.JMenu cambio_congelado;
-    private javax.swing.JMenu cambio_fresco;
-    private javax.swing.JMenu cambio_refrigerado;
     private javax.swing.JMenu cambios;
     private javax.swing.JPanel escritorio;
     private javax.swing.JMenu jMenu23;

@@ -10,12 +10,15 @@
 public class CambiosFrescos extends javax.swing.JInternalFrame {
 
     ControlProducto producto;
-    public CambiosFrescos(ControlProducto producto) {
+    public CambiosFrescos(ControlProducto producto,String nombre) {
         this.producto=producto;
         initComponents();
+        initiw(nombre);
     }
 
-    
+     public void initiw(String name){
+        nombre.setText(name);
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -171,13 +174,15 @@ public class CambiosFrescos extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void realizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_realizarActionPerformed
-         ProductoRefrigerado producto_ = (ProductoRefrigerado)producto.findbyName(nombre.getText());
+         ProductoFresco producto_ = (ProductoFresco)producto.findbyName(nombre.getText());
        producto_.setCodigo(Integer.parseInt(codigo.getText()));
        producto_.setNombre(nombre.getText());
        producto_.setNumLote(Integer.parseInt(nlote.getText()));
        producto_.setFecha_caducidad(f_caducidad.getText());
        producto_.setCostoProduccion(Double.parseDouble(costo.getText()));
        producto.cambioProducto(producto_.getNombre(), producto_);
+       
+       texto.setText(producto.buscarPorNombre(nombre.getText()));
     }//GEN-LAST:event_realizarActionPerformed
 
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed

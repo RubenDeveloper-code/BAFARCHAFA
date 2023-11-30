@@ -10,10 +10,16 @@
 public class CambiosCongelado extends javax.swing.JInternalFrame {
 
     ControlProducto producto;
-    public CambiosCongelado(ControlProducto producto) {
+    public CambiosCongelado(ControlProducto producto, String nombre) {
         this.producto=producto;
         initComponents();
+        initiw(nombre);
     }
+    
+    public void initiw(String name){
+        nombre.setText(name);
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

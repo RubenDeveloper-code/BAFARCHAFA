@@ -12,8 +12,11 @@ public class PR extends javax.swing.JInternalFrame {
     ControlProducto producto;
     public PR(ControlProducto producto) {
         this.producto=producto;
+        
         initComponents();
     }
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
