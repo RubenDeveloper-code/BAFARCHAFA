@@ -1,19 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package com.mycompany.proyecto_final_agroalimentos;
 
-/**
- *
- * @author Alejandro Alejandre
- */
+
+
 public class CP extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CP
-     */
-    public CP() {
+    ControlProducto  productos;
+    public  CP() {
+        productos = new ControlProducto();
         initComponents();
     }
 
@@ -35,26 +27,21 @@ public class CP extends javax.swing.JFrame {
         jMenuBar4 = new javax.swing.JMenuBar();
         jMenu7 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
+        escritorio = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu23 = new javax.swing.JMenu();
+        alta_congelado = new javax.swing.JMenu();
+        alta_fresco = new javax.swing.JMenu();
+        alta_refrigerado = new javax.swing.JMenu();
+        jMenu24 = new javax.swing.JMenu();
+        reportes = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
-        jMenu16 = new javax.swing.JMenu();
-        jMenu17 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenu26 = new javax.swing.JMenu();
-        jMenu12 = new javax.swing.JMenu();
-        jMenu13 = new javax.swing.JMenu();
-        jMenu14 = new javax.swing.JMenu();
-        jMenu15 = new javax.swing.JMenu();
-        jMenu18 = new javax.swing.JMenu();
-        jMenu19 = new javax.swing.JMenu();
-        jMenu20 = new javax.swing.JMenu();
-        jMenu21 = new javax.swing.JMenu();
-        jMenu22 = new javax.swing.JMenu();
-        jMenu23 = new javax.swing.JMenu();
-        jMenu24 = new javax.swing.JMenu();
+        salir = new javax.swing.JMenu();
 
         jMenu3.setText("File");
         jMenuBar2.add(jMenu3);
@@ -76,20 +63,55 @@ public class CP extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("BUSQUEDA");
+        escritorio.setBackground(new java.awt.Color(0, 102, 102));
 
-        jMenu16.setText("CODIGO");
-        jMenu1.add(jMenu16);
+        javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
+        escritorio.setLayout(escritorioLayout);
+        escritorioLayout.setHorizontalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 367, Short.MAX_VALUE)
+        );
+        escritorioLayout.setVerticalGroup(
+            escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 266, Short.MAX_VALUE)
+        );
 
-        jMenu17.setText("NOMBRE");
-        jMenu1.add(jMenu17);
+        jMenu23.setText("Altas");
 
+        alta_congelado.setText("Producto Congelado");
+        alta_congelado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                alta_congeladoMouseClicked(evt);
+            }
+        });
+        jMenu23.add(alta_congelado);
+
+        alta_fresco.setText("Producto Fresco");
+        jMenu23.add(alta_fresco);
+
+        alta_refrigerado.setText("Producto Refrigerado");
+        jMenu23.add(alta_refrigerado);
+
+        jMenuBar1.add(jMenu23);
+
+        jMenu24.setText("Bajas");
+        jMenuBar1.add(jMenu24);
+
+        reportes.setText("Reportes");
+        reportes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                reportesMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(reportes);
+
+        jMenu1.setText("Buscar");
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("CAMBIAR PRODUCTO");
+        jMenu2.setText("Cambios");
         jMenuBar1.add(jMenu2);
 
-        jMenu9.setText("CALCULAR PRECIO");
+        jMenu9.setText("Calcular precio");
 
         jMenu10.setText("MERCANCIA TOTAL");
         jMenu9.add(jMenu10);
@@ -103,40 +125,13 @@ public class CP extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu9);
 
-        jMenu12.setText("REPORTE GENERAL");
-
-        jMenu13.setText("REPORTE GENERAL");
-        jMenu12.add(jMenu13);
-
-        jMenu14.setText("ASCENDENTE");
-        jMenu12.add(jMenu14);
-
-        jMenu15.setText("DESCENDENTE");
-        jMenu12.add(jMenu15);
-
-        jMenu18.setText("CATEGORIA");
-
-        jMenu19.setText("PRODUCTOS FRESCOS");
-        jMenu18.add(jMenu19);
-
-        jMenu20.setText("PRODUCTOS REFRIGERADOS");
-        jMenu18.add(jMenu20);
-
-        jMenu21.setText("PRODUCTOS CONGELADOS");
-        jMenu18.add(jMenu21);
-
-        jMenu12.add(jMenu18);
-
-        jMenu22.setText("COSTO DE PRODUCCION");
-        jMenu12.add(jMenu22);
-
-        jMenuBar1.add(jMenu12);
-
-        jMenu23.setText("ALTAS");
-        jMenuBar1.add(jMenu23);
-
-        jMenu24.setText("BAJAS");
-        jMenuBar1.add(jMenu24);
+        salir.setText("Salir");
+        salir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                salirMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(salir);
 
         setJMenuBar(jMenuBar1);
 
@@ -144,15 +139,38 @@ public class CP extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 578, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void salirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirMouseClicked
+        
+        System.exit(0);
+    }//GEN-LAST:event_salirMouseClicked
+
+    private void alta_congeladoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alta_congeladoMouseClicked
+        PC altas = new PC(productos);
+        escritorio.add(altas);
+        altas.setVisible(true);
+    }//GEN-LAST:event_alta_congeladoMouseClicked
+
+    private void reportesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportesMouseClicked
+        VReportesBafar reporte = new VReportesBafar(productos);
+        escritorio.add(reporte);
+        reportes.setVisible(true);
+    }//GEN-LAST:event_reportesMouseClicked
 
     /**
      * @param args the command line arguments
@@ -190,21 +208,14 @@ public class CP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu alta_congelado;
+    private javax.swing.JMenu alta_fresco;
+    private javax.swing.JMenu alta_refrigerado;
+    private javax.swing.JPanel escritorio;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
-    private javax.swing.JMenu jMenu12;
-    private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu14;
-    private javax.swing.JMenu jMenu15;
-    private javax.swing.JMenu jMenu16;
-    private javax.swing.JMenu jMenu17;
-    private javax.swing.JMenu jMenu18;
-    private javax.swing.JMenu jMenu19;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu20;
-    private javax.swing.JMenu jMenu21;
-    private javax.swing.JMenu jMenu22;
     private javax.swing.JMenu jMenu23;
     private javax.swing.JMenu jMenu24;
     private javax.swing.JMenu jMenu26;
@@ -219,5 +230,7 @@ public class CP extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuBar jMenuBar4;
+    private javax.swing.JMenu reportes;
+    private javax.swing.JMenu salir;
     // End of variables declaration//GEN-END:variables
 }
