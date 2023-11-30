@@ -75,18 +75,27 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Producto Fresco"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="alta_frescoMouseClicked"/>
+              </Events>
             </Menu>
             <Menu class="javax.swing.JMenu" name="alta_refrigerado">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Producto Refrigerado"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="alta_refrigeradoMouseClicked"/>
+              </Events>
             </Menu>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu24">
+        <Menu class="javax.swing.JMenu" name="bajas">
           <Properties>
             <Property name="text" type="java.lang.String" value="Bajas"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bajasMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="reportes">
           <Properties>
@@ -96,39 +105,52 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="reportesMouseClicked"/>
           </Events>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="buscar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="buscarMouseClicked"/>
+          </Events>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="cambios">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cambios"/>
           </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="cambio_congelado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productos Congelados"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cambio_congeladoMouseClicked"/>
+              </Events>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="cambio_fresco">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productos Frescos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cambio_frescoMouseClicked"/>
+              </Events>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="cambio_refrigerado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Productos Refrigerados"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cambio_refrigeradoMouseClicked"/>
+              </Events>
+            </Menu>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu9">
+        <Menu class="javax.swing.JMenu" name="calcularPrecio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Calcular precio"/>
           </Properties>
-          <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu10">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="MERCANCIA TOTAL"/>
-              </Properties>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu11">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="PRODUCTO"/>
-              </Properties>
-              <SubComponents>
-                <Menu class="javax.swing.JMenu" name="jMenu26">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="CODIGO"/>
-                  </Properties>
-                </Menu>
-              </SubComponents>
-            </Menu>
-          </SubComponents>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="calcularPrecioMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="salir">
           <Properties>

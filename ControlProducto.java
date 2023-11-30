@@ -16,7 +16,7 @@ public class ControlProducto {
         max=20;
         cont=-1;
     }
-    public void test() {
+    public void save() {
         try {
             srs.saveArray(productos);
         } catch(Exception e) {
@@ -26,12 +26,20 @@ public class ControlProducto {
 
     public String buscarPorNombre(String nombre) {
         busquedaBinaria bb = new busquedaBinaria(productos);
-        return productos[bb.buscarBinariamenteentePerNombre(nombre)].toString();
+        int index = bb.buscarBinariamenteentePerNombre(nombre);
+        if(index == -1)return "Producto no encontrados";
+        return productos[index].toString();
     }
 
     public String buscarPorCodigo(int codigo) {
         busquedaBinaria bb = new busquedaBinaria(productos);
-        return productos[bb.buscarBinariamenteentePerCodigo(codigo)].toString();
+          int index = bb.buscarBinariamenteentePerCodigo(codigo);
+        if(index == -1)return "Producto no encontrados";
+        return productos[index].toString();
+    }
+    public Producto findbyName(String nombre){
+        busquedaBinaria bb = new busquedaBinaria(productos);
+        return productos[bb.buscarBinariamenteentePerNombre(nombre)];
     }
 
     //acuerdeze solo la superclase atributos, no los base, los de superclasepoderosa, ya tu das el  tratamiento de copia de datos desde la interfas de antiguos a nuevos
@@ -61,7 +69,7 @@ public class ControlProducto {
     }
 
     //El producto lo creas con la info de la interfas fresquesita y lo pasas wuawuawua
-    public String altas(Producto objeto) {
+    public String altas(Producto  objeto) {
         int index = indexToAddItemFrom(productos);
         if(index == ERROR)return "no se puede añadir";
         productos[index]=objeto;
@@ -84,45 +92,46 @@ public class ControlProducto {
             }
             cont--;
         }
+        
     }
 
     public String reporteGeneral() {
         String res = "";
         for(Producto producto : productos) {
             if(producto==null)continue;
-            res+=producto.toString();
+            res+=producto.toString()+"\n";
         }
         return res;
     }
 
     public String reporteCategoriasAsendenteInsert() {
-        String reporte = "---------------------Reporte----------------------";
+        String reporte = "---------------------Reporte----------------------\n";
         insertMetodo insFrescos = new insertMetodo(getSubStringFrescos());
-        reporte+="------>Frescos<-------";
+        reporte+="------>Frescos<-------\n";
         reporte+=insFrescos.getOrderedByNameAscendentStr();
 
         insertMetodo insConjelados = new insertMetodo(getSubStringCongelados());
-        reporte+="------>Conjelados<-------";
+        reporte+="------>Conjelados<-------\n";
         reporte+=insConjelados.getOrderedByNameAscendentStr();
 
         insertMetodo insRefrigerados = new insertMetodo(getSubStringRefrigerado());
-        reporte+="------>Refrigerados<-------";
+        reporte+="------>Refrigerados<-------\n";
         reporte+=insRefrigerados.getOrderedByNameAscendentStr();
         return reporte;
     }
 
     public String reporteCategoriasDescendienteInsert() {
-        String reporte = "---------------------Reporte Desendiente----------------------";
+        String reporte = "---------------------Reporte Desendiente----------------------\n";
         insertMetodo insFrescos = new insertMetodo(getSubStringFrescos());
-        reporte+="------>Frescos<-------";
+        reporte+="------>Frescos<-------\n";
         reporte+=insFrescos.getOrderByNameDesendentStr();
 
         insertMetodo insConjelados = new insertMetodo(getSubStringCongelados());
-        reporte+="------>Conjelados<-------";
+        reporte+="------>Conjelados<-------\n";
         reporte+=insConjelados.getOrderByNameDesendentStr();
 
         insertMetodo insRefrigerados = new insertMetodo(getSubStringRefrigerado());
-        reporte+="------>Refrigerados<-------";
+        reporte+="------>Refrigerados<-------\n";
         reporte+=insRefrigerados.getOrderByNameDesendentStr();
         return reporte;
     }

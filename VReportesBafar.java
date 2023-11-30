@@ -1,12 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
- */
 
-/**
- *
- * @author jesus
- */
+
+
 public class VReportesBafar extends javax.swing.JInternalFrame {
 
     ControlProducto producto;
@@ -37,7 +31,6 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
         asc_categoria = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         asc_costo = new javax.swing.JButton();
-        desc_costo = new javax.swing.JButton();
         regresar = new javax.swing.JButton();
 
         jLabel1.setText("REPORTES");
@@ -54,22 +47,45 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
         });
 
         asc_nombre.setText("Ascendente");
+        asc_nombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                asc_nombreActionPerformed(evt);
+            }
+        });
 
         desc_nombre.setText("Descendente");
+        desc_nombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                desc_nombreActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("NOMBRE");
 
         jLabel3.setText("COSTO PR.");
 
         desc_categoria.setText("Descendente");
+        desc_categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                desc_categoriaActionPerformed(evt);
+            }
+        });
 
         asc_categoria.setText("Ascendente");
+        asc_categoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                asc_categoriaActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("CATEGORIA");
 
         asc_costo.setText("Ascendente");
-
-        desc_costo.setText("Descendente");
+        asc_costo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                asc_costoActionPerformed(evt);
+            }
+        });
 
         regresar.setText("Regresar");
         regresar.addActionListener(new java.awt.event.ActionListener() {
@@ -100,11 +116,9 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(asc_categoria)
                             .addComponent(desc_categoria))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(asc_costo)
-                            .addComponent(desc_costo))))
-                .addContainerGap(52, Short.MAX_VALUE))
+                        .addGap(27, 27, 27)
+                        .addComponent(asc_costo)))
+                .addContainerGap(50, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -127,15 +141,11 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(asc_costo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(desc_costo))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -150,11 +160,15 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(asc_categoria)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(desc_categoria)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(general)
-                    .addComponent(regresar)))
+                                .addComponent(desc_categoria)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(general)
+                            .addComponent(regresar)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(asc_costo)
+                        .addGap(50, 50, 50))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -183,13 +197,32 @@ public class VReportesBafar extends javax.swing.JInternalFrame {
         
     }//GEN-LAST:event_regresarActionPerformed
 
+    private void asc_nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asc_nombreActionPerformed
+        texto.setText(producto.reporteAscendenteQuickSort());
+    }//GEN-LAST:event_asc_nombreActionPerformed
+
+    private void desc_nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desc_nombreActionPerformed
+        texto.setText(producto.reporteDescendenteQuickSort());
+    }//GEN-LAST:event_desc_nombreActionPerformed
+
+    private void asc_categoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asc_categoriaActionPerformed
+        texto.setText(producto.reporteCategoriasAsendenteInsert());
+    }//GEN-LAST:event_asc_categoriaActionPerformed
+
+    private void desc_categoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desc_categoriaActionPerformed
+        texto.setText(producto.reporteCategoriasDescendienteInsert());
+    }//GEN-LAST:event_desc_categoriaActionPerformed
+
+    private void asc_costoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asc_costoActionPerformed
+        texto.setText(producto.reporteDescendenteBurbuja());
+    }//GEN-LAST:event_asc_costoActionPerformed
+
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton asc_categoria;
     private javax.swing.JButton asc_costo;
     private javax.swing.JButton asc_nombre;
     private javax.swing.JButton desc_categoria;
-    private javax.swing.JButton desc_costo;
     private javax.swing.JButton desc_nombre;
     private javax.swing.JButton general;
     private javax.swing.JLabel jLabel1;

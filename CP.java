@@ -33,14 +33,14 @@ public class CP extends javax.swing.JFrame {
         alta_congelado = new javax.swing.JMenu();
         alta_fresco = new javax.swing.JMenu();
         alta_refrigerado = new javax.swing.JMenu();
-        jMenu24 = new javax.swing.JMenu();
+        bajas = new javax.swing.JMenu();
         reportes = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu9 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
-        jMenu11 = new javax.swing.JMenu();
-        jMenu26 = new javax.swing.JMenu();
+        buscar = new javax.swing.JMenu();
+        cambios = new javax.swing.JMenu();
+        cambio_congelado = new javax.swing.JMenu();
+        cambio_fresco = new javax.swing.JMenu();
+        cambio_refrigerado = new javax.swing.JMenu();
+        calcularPrecio = new javax.swing.JMenu();
         salir = new javax.swing.JMenu();
 
         jMenu3.setText("File");
@@ -87,15 +87,30 @@ public class CP extends javax.swing.JFrame {
         jMenu23.add(alta_congelado);
 
         alta_fresco.setText("Producto Fresco");
+        alta_fresco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                alta_frescoMouseClicked(evt);
+            }
+        });
         jMenu23.add(alta_fresco);
 
         alta_refrigerado.setText("Producto Refrigerado");
+        alta_refrigerado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                alta_refrigeradoMouseClicked(evt);
+            }
+        });
         jMenu23.add(alta_refrigerado);
 
         jMenuBar1.add(jMenu23);
 
-        jMenu24.setText("Bajas");
-        jMenuBar1.add(jMenu24);
+        bajas.setText("Bajas");
+        bajas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bajasMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(bajas);
 
         reportes.setText("Reportes");
         reportes.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -105,25 +120,49 @@ public class CP extends javax.swing.JFrame {
         });
         jMenuBar1.add(reportes);
 
-        jMenu1.setText("Buscar");
-        jMenuBar1.add(jMenu1);
+        buscar.setText("Buscar");
+        buscar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buscarMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(buscar);
 
-        jMenu2.setText("Cambios");
-        jMenuBar1.add(jMenu2);
+        cambios.setText("Cambios");
 
-        jMenu9.setText("Calcular precio");
+        cambio_congelado.setText("Productos Congelados");
+        cambio_congelado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cambio_congeladoMouseClicked(evt);
+            }
+        });
+        cambios.add(cambio_congelado);
 
-        jMenu10.setText("MERCANCIA TOTAL");
-        jMenu9.add(jMenu10);
+        cambio_fresco.setText("Productos Frescos");
+        cambio_fresco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cambio_frescoMouseClicked(evt);
+            }
+        });
+        cambios.add(cambio_fresco);
 
-        jMenu11.setText("PRODUCTO");
+        cambio_refrigerado.setText("Productos Refrigerados");
+        cambio_refrigerado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cambio_refrigeradoMouseClicked(evt);
+            }
+        });
+        cambios.add(cambio_refrigerado);
 
-        jMenu26.setText("CODIGO");
-        jMenu11.add(jMenu26);
+        jMenuBar1.add(cambios);
 
-        jMenu9.add(jMenu11);
-
-        jMenuBar1.add(jMenu9);
+        calcularPrecio.setText("Calcular precio");
+        calcularPrecio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                calcularPrecioMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(calcularPrecio);
 
         salir.setText("Salir");
         salir.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -156,7 +195,7 @@ public class CP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void salirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirMouseClicked
-        
+        productos.save();
         System.exit(0);
     }//GEN-LAST:event_salirMouseClicked
 
@@ -169,8 +208,56 @@ public class CP extends javax.swing.JFrame {
     private void reportesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportesMouseClicked
         VReportesBafar reporte = new VReportesBafar(productos);
         escritorio.add(reporte);
-        reportes.setVisible(true);
+        reporte.setVisible(true);
     }//GEN-LAST:event_reportesMouseClicked
+
+    private void alta_frescoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alta_frescoMouseClicked
+        PF reporte = new PF(productos);
+        escritorio.add(reporte);
+        reporte.setVisible(true);
+    }//GEN-LAST:event_alta_frescoMouseClicked
+
+    private void alta_refrigeradoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alta_refrigeradoMouseClicked
+       PR reporte = new PR(productos);
+       escritorio.add(reporte);
+       reporte.setVisible(true);
+    }//GEN-LAST:event_alta_refrigeradoMouseClicked
+
+    private void bajasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bajasMouseClicked
+        Bajas bajas = new Bajas(productos);
+        escritorio.add(bajas);
+        bajas.setVisible(true);
+    }//GEN-LAST:event_bajasMouseClicked
+
+    private void cambio_congeladoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_congeladoMouseClicked
+       CambiosCongelado cambio= new CambiosCongelado(productos);
+       escritorio.add(cambio);
+       cambio.setVisible(true);
+    }//GEN-LAST:event_cambio_congeladoMouseClicked
+
+    private void cambio_frescoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_frescoMouseClicked
+        CambiosFrescos cambio = new CambiosFrescos(productos);
+        escritorio.add(cambio);
+        cambio.setVisible(true);
+    }//GEN-LAST:event_cambio_frescoMouseClicked
+
+    private void cambio_refrigeradoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cambio_refrigeradoMouseClicked
+        CambiosRefrigerados cambio = new CambiosRefrigerados(productos);
+        escritorio.add(cambio);
+        cambio.setVisible(true);
+    }//GEN-LAST:event_cambio_refrigeradoMouseClicked
+
+    private void calcularPrecioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularPrecioMouseClicked
+        CalcularPrecio calcular = new CalcularPrecio(productos);
+        escritorio.add(calcular);
+        calcular.setVisible(true);
+    }//GEN-LAST:event_calcularPrecioMouseClicked
+
+    private void buscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarMouseClicked
+        Buscar buscar = new Buscar(productos);
+        escritorio.add(buscar);
+        buscar.setVisible(true);
+    }//GEN-LAST:event_buscarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -211,21 +298,21 @@ public class CP extends javax.swing.JFrame {
     private javax.swing.JMenu alta_congelado;
     private javax.swing.JMenu alta_fresco;
     private javax.swing.JMenu alta_refrigerado;
+    private javax.swing.JMenu bajas;
+    private javax.swing.JMenu buscar;
+    private javax.swing.JMenu calcularPrecio;
+    private javax.swing.JMenu cambio_congelado;
+    private javax.swing.JMenu cambio_fresco;
+    private javax.swing.JMenu cambio_refrigerado;
+    private javax.swing.JMenu cambios;
     private javax.swing.JPanel escritorio;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
-    private javax.swing.JMenu jMenu11;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu23;
-    private javax.swing.JMenu jMenu24;
-    private javax.swing.JMenu jMenu26;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
