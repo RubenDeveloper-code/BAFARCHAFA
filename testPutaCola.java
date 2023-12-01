@@ -3,8 +3,7 @@ class testPutaCola {
         ControlProducto control = new ControlProducto();
         control.altas(new ProductoCongelado(0, "a", 0, "a", 0, 0));
         control.altas(new ProductoCongelado(0, "a", 0, "a", 0, 0));
-        control.altas(new ProductoCongelado(0, "a", 0, "a", 0, 0));
-        System.out.print(control.reporteDescendenteQuickSort());
-        control.test();
+        control.altas(new ProductoCongelado(0, "a", 22, "a", 0, 0));
+        System.out.println(control.buscarPorCodigo(22).toString());
     }
 }

@@ -32,10 +32,24 @@
 !_TAG_ROLE_DESCRIPTION!Java!package	imported	/imported package/
 BBinaria	busquedaBinaria.java	/^    private int BBinaria(Producto[] array, String busqueda) {$/;"	m	class:busquedaBinaria	file:
 BBinariaCodigo	busquedaBinaria.java	/^    private int BBinariaCodigo(Producto[] array, int busqueda) {$/;"	m	class:busquedaBinaria	file:
+Bajas	Bajas.java	/^    public Bajas(ControlProducto producto) {$/;"	m	class:Bajas
+Bajas	Bajas.java	/^public class Bajas extends javax.swing.JInternalFrame {$/;"	c
+Buscar	Buscar.java	/^    public Buscar(ControlProducto productos) {$/;"	m	class:Buscar
+Buscar	Buscar.java	/^public class Buscar extends javax.swing.JInternalFrame {$/;"	c
 CALIFICACION	insertMetodo.java	/^    static final int CALIFICACION = 2;$/;"	f	class:insertMetodo
 CARRERA	insertMetodo.java	/^    static final int CARRERA = 3;$/;"	f	class:insertMetodo
-CP	CP.java	/^    public CP() {$/;"	m	class:CP
+CP	CP.java	/^    public  CP() {$/;"	m	class:CP
 CP	CP.java	/^public class CP extends javax.swing.JFrame {$/;"	c
+CalcularPrecio	CalcularPrecio.java	/^    public CalcularPrecio(ControlProducto producto) {$/;"	m	class:CalcularPrecio
+CalcularPrecio	CalcularPrecio.java	/^public class CalcularPrecio extends javax.swing.JInternalFrame {$/;"	c
+CambiosCongelado	CambiosCongelado.java	/^    public CambiosCongelado(ControlProducto producto, String nombre) {$/;"	m	class:CambiosCongelado
+CambiosCongelado	CambiosCongelado.java	/^public class CambiosCongelado extends javax.swing.JInternalFrame {$/;"	c
+CambiosFrescos	CambiosFrescos.java	/^    public CambiosFrescos(ControlProducto producto,String nombre) {$/;"	m	class:CambiosFrescos
+CambiosFrescos	CambiosFrescos.java	/^public class CambiosFrescos extends javax.swing.JInternalFrame {$/;"	c
+CambiosPrincipal	CambiosPrincipal.java	/^    public CambiosPrincipal(ControlProducto productos) {$/;"	m	class:CambiosPrincipal
+CambiosPrincipal	CambiosPrincipal.java	/^public class CambiosPrincipal extends javax.swing.JInternalFrame {$/;"	c
+CambiosRefrigerados	CambiosRefrigerados.java	/^    public CambiosRefrigerados(ControlProducto producto,String nombre) {$/;"	m	class:CambiosRefrigerados
+CambiosRefrigerados	CambiosRefrigerados.java	/^public class CambiosRefrigerados extends javax.swing.JInternalFrame {$/;"	c
 ControlProducto	ControlProducto.java	/^    public ControlProducto() {$/;"	m	class:ControlProducto
 ControlProducto	ControlProducto.java	/^public class ControlProducto {$/;"	c
 ERROR	ControlProducto.java	/^    static final int ERROR = -1;$/;"	f	class:ControlProducto
@@ -45,11 +59,11 @@ NOMBRE	burbujaMetodo.java	/^    static final int NOMBRE = 0;$/;"	f	class:burbuja
 NOMBRE	insertMetodo.java	/^    static final int NOMBRE = 0;$/;"	f	class:insertMetodo
 OTROS_COSTOS	OTROS_COSTOS.java	/^public interface OTROS_COSTOS {$/;"	i
 OrdenarProductoPorCampo	burbujaMetodo.java	/^    private void OrdenarProductoPorCampo(Producto[] productos, int campo, boolean desendiente) {$/;"	m	class:burbujaMetodo	file:
-PC	PC.java	/^    public PC() {$/;"	m	class:PC
+PC	PC.java	/^    public PC(ControlProducto producto) {$/;"	m	class:PC
 PC	PC.java	/^public class PC extends javax.swing.JInternalFrame {$/;"	c
-PF	PF.java	/^    public PF() {$/;"	m	class:PF
+PF	PF.java	/^    public PF(ControlProducto producto) {$/;"	m	class:PF
 PF	PF.java	/^public class PF extends javax.swing.JInternalFrame {$/;"	c
-PR	PR.java	/^    public PR() {$/;"	m	class:PR
+PR	PR.java	/^    public PR(ControlProducto producto) {$/;"	m	class:PR
 PR	PR.java	/^public class PR extends javax.swing.JInternalFrame {$/;"	c
 Producto	Producto.java	/^    public Producto(String nombre, int codigo, String fecha_caducidad, int numLote, double costo/;"	m	class:Producto
 Producto	Producto.java	/^public abstract class Producto implements Serializable {$/;"	c
@@ -61,19 +75,53 @@ ProductoRefrigerado	ProductoRefrigerado.java	/^    public ProductoRefrigerado(in
 ProductoRefrigerado	ProductoRefrigerado.java	/^public class ProductoRefrigerado extends Producto implements OTROS_COSTOS {$/;"	c
 REPORTES	REPORTES.java	/^    public REPORTES() {$/;"	m	class:REPORTES
 REPORTES	REPORTES.java	/^public class REPORTES extends javax.swing.JFrame {$/;"	c
+Realizar	CambiosCongelado.java	/^    private javax.swing.JButton Realizar;$/;"	f	class:CambiosCongelado	file:
+Realizar	PC.java	/^    private javax.swing.JButton Realizar;$/;"	f	class:PC	file:
+RealizarActionPerformed	CambiosCongelado.java	/^    private void RealizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_Re/;"	m	class:CambiosCongelado	file:
+RealizarActionPerformed	PC.java	/^    private void RealizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_Re/;"	m	class:PC	file:
+Regresar	CambiosCongelado.java	/^    private javax.swing.JButton Regresar;$/;"	f	class:CambiosCongelado	file:
+Regresar	PC.java	/^    private javax.swing.JButton Regresar;$/;"	f	class:PC	file:
+RegresarActionPerformed	CambiosCongelado.java	/^    private void RegresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_Re/;"	m	class:CambiosCongelado	file:
+RegresarActionPerformed	PC.java	/^    private void RegresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_Re/;"	m	class:PC	file:
 SaveRecoverSystem	SaveRecoverSystem.java	/^    SaveRecoverSystem() {$/;"	m	class:SaveRecoverSystem
 SaveRecoverSystem	SaveRecoverSystem.java	/^class SaveRecoverSystem {$/;"	c
 THREEMOUNTHSDAYS	ValidacionFecha.java	/^    final static int THREEMOUNTHSDAYS = 90;$/;"	f	class:ValidacionFecha
+VReportesBafar	VReportesBafar.java	/^    public VReportesBafar(ControlProducto producto) {$/;"	m	class:VReportesBafar
+VReportesBafar	VReportesBafar.java	/^public class VReportesBafar extends javax.swing.JInternalFrame {$/;"	c
 ValidacionFecha	ValidacionFecha.java	/^    ValidacionFecha() {}$/;"	m	class:ValidacionFecha
 ValidacionFecha	ValidacionFecha.java	/^class ValidacionFecha {$/;"	c
-altas	ControlProducto.java	/^    public String altas(Producto objeto) {$/;"	m	class:ControlProducto
+alta_congelado	CP.java	/^    private javax.swing.JMenu alta_congelado;$/;"	f	class:CP	file:
+alta_congeladoMouseClicked	CP.java	/^    private void alta_congeladoMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_/;"	m	class:CP	file:
+alta_fresco	CP.java	/^    private javax.swing.JMenu alta_fresco;$/;"	f	class:CP	file:
+alta_frescoMouseClicked	CP.java	/^    private void alta_frescoMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_alt/;"	m	class:CP	file:
+alta_refrigerado	CP.java	/^    private javax.swing.JMenu alta_refrigerado;$/;"	f	class:CP	file:
+alta_refrigeradoMouseClicked	CP.java	/^    private void alta_refrigeradoMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:even/;"	m	class:CP	file:
+altas	ControlProducto.java	/^    public String altas(Producto  objeto) {$/;"	m	class:ControlProducto
 array2String	insertMetodo.java	/^    private String array2String(Producto[] objs) {$/;"	m	class:insertMetodo	file:
 arregloOrdenado	quickSort.java	/^    public Producto[] arregloOrdenado() {$/;"	m	class:quickSort
+asc_categoria	VReportesBafar.java	/^    private javax.swing.JButton asc_categoria;$/;"	f	class:VReportesBafar	file:
+asc_categoriaActionPerformed	VReportesBafar.java	/^    private void asc_categoriaActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:eve/;"	m	class:VReportesBafar	file:
+asc_costo	VReportesBafar.java	/^    private javax.swing.JButton asc_costo;$/;"	f	class:VReportesBafar	file:
+asc_costoActionPerformed	VReportesBafar.java	/^    private void asc_costoActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_a/;"	m	class:VReportesBafar	file:
+asc_nombre	VReportesBafar.java	/^    private javax.swing.JButton asc_nombre;$/;"	f	class:VReportesBafar	file:
+asc_nombreActionPerformed	VReportesBafar.java	/^    private void asc_nombreActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_/;"	m	class:VReportesBafar	file:
+bajas	CP.java	/^    private javax.swing.JMenu bajas;$/;"	f	class:CP	file:
 bajas	ControlProducto.java	/^    public String bajas(String nombre) {$/;"	m	class:ControlProducto
+bajasMouseClicked	CP.java	/^    private void bajasMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_bajasMous/;"	m	class:CP	file:
 burbujaMetodo	burbujaMetodo.java	/^    burbujaMetodo(Producto[] prods) {$/;"	m	class:burbujaMetodo
 burbujaMetodo	burbujaMetodo.java	/^public class burbujaMetodo {$/;"	c
+buscar	CP.java	/^    private javax.swing.JMenu buscar;$/;"	f	class:CP	file:
+buscar	CambiosCongelado.java	/^    private javax.swing.JButton buscar;$/;"	f	class:CambiosCongelado	file:
+buscar	CambiosFrescos.java	/^    private javax.swing.JButton buscar;$/;"	f	class:CambiosFrescos	file:
+buscar	CambiosPrincipal.java	/^    private javax.swing.JButton buscar;$/;"	f	class:CambiosPrincipal	file:
+buscar	CambiosRefrigerados.java	/^    private javax.swing.JButton buscar;$/;"	f	class:CambiosRefrigerados	file:
+buscarActionPerformed	CambiosCongelado.java	/^    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_busc/;"	m	class:CambiosCongelado	file:
+buscarActionPerformed	CambiosFrescos.java	/^    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_busc/;"	m	class:CambiosFrescos	file:
+buscarActionPerformed	CambiosPrincipal.java	/^    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_busc/;"	m	class:CambiosPrincipal	file:
+buscarActionPerformed	CambiosRefrigerados.java	/^    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_busc/;"	m	class:CambiosRefrigerados	file:
 buscarBinariamenteentePerCodigo	busquedaBinaria.java	/^    public int buscarBinariamenteentePerCodigo(int codigo) {$/;"	m	class:busquedaBinaria
 buscarBinariamenteentePerNombre	busquedaBinaria.java	/^    public int buscarBinariamenteentePerNombre(String nombre) {$/;"	m	class:busquedaBinaria
+buscarMouseClicked	CP.java	/^    private void buscarMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_buscarMo/;"	m	class:CP	file:
 buscarPorCodigo	ControlProducto.java	/^    public String buscarPorCodigo(int codigo) {$/;"	m	class:ControlProducto
 buscarPorNombre	ControlProducto.java	/^    public String buscarPorNombre(String nombre) {$/;"	m	class:ControlProducto
 busquedaBinaria	busquedaBinaria.java	/^    busquedaBinaria(Producto[] prods) {$/;"	m	class:busquedaBinaria
@@ -86,25 +134,63 @@ calculaOtrosCostos	OTROS_COSTOS.java	/^    public abstract double calculaOtrosCo
 calculaOtrosCostos	ProductoCongelado.java	/^    public double calculaOtrosCostos() {$/;"	m	class:ProductoCongelado
 calculaOtrosCostos	ProductoFresco.java	/^    public double calculaOtrosCostos() {$/;"	m	class:ProductoFresco
 calculaOtrosCostos	ProductoRefrigerado.java	/^    public double calculaOtrosCostos() {$/;"	m	class:ProductoRefrigerado
+calcularPrecio	CP.java	/^    private javax.swing.JMenu calcularPrecio;$/;"	f	class:CP	file:
+calcularPrecioMouseClicked	CP.java	/^    private void calcularPrecioMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_/;"	m	class:CP	file:
 calcularPrecioVentaGeneral	ControlProducto.java	/^    public double calcularPrecioVentaGeneral() {$/;"	m	class:ControlProducto
 calcularPrecioVentaPorCodigo	ControlProducto.java	/^    public double calcularPrecioVentaPorCodigo(int codigo) {$/;"	m	class:ControlProducto
 cambioProducto	ControlProducto.java	/^    public String cambioProducto(String nombre, Producto nuevoProducto) {$/;"	m	class:ControlProducto
+cambios	CP.java	/^    private javax.swing.JMenu cambios;$/;"	f	class:CP	file:
+cambiosMouseClicked	CP.java	/^    private void cambiosMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_cambios/;"	m	class:CP	file:
+codigo	Buscar.java	/^    private javax.swing.JButton codigo;$/;"	f	class:Buscar	file:
+codigo	CalcularPrecio.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:CalcularPrecio	file:
+codigo	CambiosCongelado.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:CambiosCongelado	file:
+codigo	CambiosFrescos.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:CambiosFrescos	file:
+codigo	CambiosRefrigerados.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:CambiosRefrigerados	file:
+codigo	PC.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:PC	file:
+codigo	PF.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:PF	file:
+codigo	PR.java	/^    private javax.swing.JTextField codigo;$/;"	f	class:PR	file:
 codigo	Producto.java	/^    private int codigo;$/;"	f	class:Producto	file:
+codigoActionPerformed	Buscar.java	/^    private void codigoActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_codi/;"	m	class:Buscar	file:
 codigoSupAlimentaria	ProductoRefrigerado.java	/^    private int codigoSupAlimentaria;$/;"	f	class:ProductoRefrigerado	file:
-com.mycompany.proyecto_final_agroalimentos	CP.java	/^package com.mycompany.proyecto_final_agroalimentos;$/;"	p
-com.mycompany.proyecto_final_agroalimentos	PC.java	/^package com.mycompany.proyecto_final_agroalimentos;$/;"	p
-com.mycompany.proyecto_final_agroalimentos	PF.java	/^package com.mycompany.proyecto_final_agroalimentos;$/;"	p
-com.mycompany.proyecto_final_agroalimentos	PR.java	/^package com.mycompany.proyecto_final_agroalimentos;$/;"	p
-com.mycompany.proyecto_final_agroalimentos	REPORTES.java	/^package com.mycompany.proyecto_final_agroalimentos;$/;"	p
+codigo_precio	CalcularPrecio.java	/^    private javax.swing.JButton codigo_precio;$/;"	f	class:CalcularPrecio	file:
+codigo_precioActionPerformed	CalcularPrecio.java	/^    private void codigo_precioActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:eve/;"	m	class:CalcularPrecio	file:
+codigo_sup	CambiosRefrigerados.java	/^    private javax.swing.JTextField codigo_sup;$/;"	f	class:CambiosRefrigerados	file:
+codigo_sup	PR.java	/^    private javax.swing.JTextField codigo_sup;$/;"	f	class:PR	file:
 comparator	burbujaMetodo.java	/^    private boolean comparator(Producto productos[], int startpos, int field,boolean inverse) {$/;"	m	class:burbujaMetodo	file:
 comparator	insertMetodo.java	/^    private boolean comparator(Producto alumnos[], int k, Producto aux, int field,boolean invers/;"	m	class:insertMetodo	file:
 cont	ControlProducto.java	/^    private int cont;$/;"	f	class:ControlProducto	file:
+costo	CambiosFrescos.java	/^    private javax.swing.JTextField costo;$/;"	f	class:CambiosFrescos	file:
+costo	CambiosRefrigerados.java	/^    private javax.swing.JTextField costo;$/;"	f	class:CambiosRefrigerados	file:
+costo	PF.java	/^    private javax.swing.JTextField costo;$/;"	f	class:PF	file:
+costo	PR.java	/^    private javax.swing.JTextField costo;$/;"	f	class:PR	file:
 costoProduccion	Producto.java	/^    private double costoProduccion;$/;"	f	class:Producto	file:
 costoTransporte	OTROS_COSTOS.java	/^    public final static double costoTransporte=300;$/;"	f	interface:OTROS_COSTOS
+costo_produccion	CambiosCongelado.java	/^    private javax.swing.JTextField costo_produccion;$/;"	f	class:CambiosCongelado	file:
+costo_produccion	PC.java	/^    private javax.swing.JTextField costo_produccion;$/;"	f	class:PC	file:
 createFile	SaveRecoverSystem.java	/^    public void createFile() {$/;"	m	class:SaveRecoverSystem
+desc_categoria	VReportesBafar.java	/^    private javax.swing.JButton desc_categoria;$/;"	f	class:VReportesBafar	file:
+desc_categoriaActionPerformed	VReportesBafar.java	/^    private void desc_categoriaActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:ev/;"	m	class:VReportesBafar	file:
+desc_nombre	VReportesBafar.java	/^    private javax.swing.JButton desc_nombre;$/;"	f	class:VReportesBafar	file:
+desc_nombreActionPerformed	VReportesBafar.java	/^    private void desc_nombreActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:VReportesBafar	file:
+escritorio	CP.java	/^    private javax.swing.JPanel escritorio;$/;"	f	class:CP	file:
+escritorioC	CambiosPrincipal.java	/^    private javax.swing.JPanel escritorioC;$/;"	f	class:CambiosPrincipal	file:
+f_caducidad	CambiosFrescos.java	/^    private javax.swing.JTextField f_caducidad;$/;"	f	class:CambiosFrescos	file:
+f_caducidad	CambiosRefrigerados.java	/^    private javax.swing.JTextField f_caducidad;$/;"	f	class:CambiosRefrigerados	file:
+f_caducidad	PF.java	/^    private javax.swing.JTextField f_caducidad;$/;"	f	class:PF	file:
+f_caducidad	PR.java	/^    private javax.swing.JTextField f_caducidad;$/;"	f	class:PR	file:
+f_envasado	CambiosFrescos.java	/^    private javax.swing.JTextField f_envasado;$/;"	f	class:CambiosFrescos	file:
+f_envasado	PF.java	/^    private javax.swing.JTextField f_envasado;$/;"	f	class:PF	file:
 fechaEnvasado	ProductoFresco.java	/^    private String fechaEnvasado;$/;"	f	class:ProductoFresco	file:
+fecha_caducidad	CambiosCongelado.java	/^    private javax.swing.JTextField fecha_caducidad;$/;"	f	class:CambiosCongelado	file:
+fecha_caducidad	PC.java	/^    private javax.swing.JTextField fecha_caducidad;$/;"	f	class:PC	file:
 fecha_caducidad	Producto.java	/^    private String fecha_caducidad;$/;"	f	class:Producto	file:
 fileName	SaveRecoverSystem.java	/^    final static String fileName = "PRODUCTOS.DAT";$/;"	f	class:SaveRecoverSystem
+findbyCode	ControlProducto.java	/^    public Producto findbyCode(int code) {$/;"	m	class:ControlProducto
+findbyName	ControlProducto.java	/^    public Producto findbyName(String nombre) {$/;"	m	class:ControlProducto
+general	CalcularPrecio.java	/^    private javax.swing.JButton general;$/;"	f	class:CalcularPrecio	file:
+general	VReportesBafar.java	/^    private javax.swing.JButton general;$/;"	f	class:VReportesBafar	file:
+generalActionPerformed	CalcularPrecio.java	/^    private void generalActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_gen/;"	m	class:CalcularPrecio	file:
+generalActionPerformed	VReportesBafar.java	/^    private void generalActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_gen/;"	m	class:VReportesBafar	file:
 getCodigo	Producto.java	/^    public int getCodigo() {$/;"	m	class:Producto
 getCodigoSupAlimentaria	ProductoRefrigerado.java	/^    public int getCodigoSupAlimentaria() {$/;"	m	class:ProductoRefrigerado
 getCostoProduccion	Producto.java	/^    public double getCostoProduccion() {$/;"	m	class:Producto
@@ -126,111 +212,141 @@ getSubStringFrescos	ControlProducto.java	/^    public Producto[] getSubStringFre
 getSubStringRefrigerado	ControlProducto.java	/^    public Producto[] getSubStringRefrigerado() {$/;"	m	class:ControlProducto
 getTempCongelacion	ProductoCongelado.java	/^    public float getTempCongelacion() {$/;"	m	class:ProductoCongelado
 indexToAddItemFrom	ControlProducto.java	/^    private int indexToAddItemFrom(Object objs[]) {$/;"	m	class:ControlProducto	file:
+initComponents	Bajas.java	/^    private void initComponents() {$/;"	m	class:Bajas	file:
+initComponents	Buscar.java	/^    private void initComponents() {$/;"	m	class:Buscar	file:
 initComponents	CP.java	/^    private void initComponents() {$/;"	m	class:CP	file:
+initComponents	CalcularPrecio.java	/^    private void initComponents() {$/;"	m	class:CalcularPrecio	file:
+initComponents	CambiosCongelado.java	/^    private void initComponents() {$/;"	m	class:CambiosCongelado	file:
+initComponents	CambiosFrescos.java	/^    private void initComponents() {$/;"	m	class:CambiosFrescos	file:
+initComponents	CambiosPrincipal.java	/^    private void initComponents() {$/;"	m	class:CambiosPrincipal	file:
+initComponents	CambiosRefrigerados.java	/^    private void initComponents() {$/;"	m	class:CambiosRefrigerados	file:
 initComponents	PC.java	/^    private void initComponents() {$/;"	m	class:PC	file:
 initComponents	PF.java	/^    private void initComponents() {$/;"	m	class:PF	file:
 initComponents	PR.java	/^    private void initComponents() {$/;"	m	class:PR	file:
 initComponents	REPORTES.java	/^    private void initComponents() {$/;"	m	class:REPORTES	file:
+initComponents	VReportesBafar.java	/^    private void initComponents() {$/;"	m	class:VReportesBafar	file:
 initLength	utilities.java	/^    public static int initLength(Object[] myArray) {$/;"	m	class:utilities
+initiw	CambiosCongelado.java	/^    public void initiw(String name){$/;"	m	class:CambiosCongelado
+initiw	CambiosFrescos.java	/^     public void initiw(String name){$/;"	m	class:CambiosFrescos
+initiw	CambiosRefrigerados.java	/^     public void initiw(String name){$/;"	m	class:CambiosRefrigerados
 insertMetodo	insertMetodo.java	/^    insertMetodo(Producto[] prods) {$/;"	m	class:insertMetodo
 insertMetodo	insertMetodo.java	/^class insertMetodo {$/;"	c
+jLabel1	Bajas.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:Bajas	file:
+jLabel1	Buscar.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:Buscar	file:
+jLabel1	CalcularPrecio.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:CalcularPrecio	file:
+jLabel1	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:CambiosCongelado	file:
+jLabel1	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:CambiosFrescos	file:
+jLabel1	CambiosPrincipal.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:CambiosPrincipal	file:
+jLabel1	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:CambiosRefrigerados	file:
 jLabel1	PC.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:PC	file:
 jLabel1	PF.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:PF	file:
 jLabel1	PR.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:PR	file:
 jLabel1	REPORTES.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:REPORTES	file:
+jLabel1	VReportesBafar.java	/^    private javax.swing.JLabel jLabel1;$/;"	f	class:VReportesBafar	file:
+jLabel2	Bajas.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:Bajas	file:
+jLabel2	Buscar.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:Buscar	file:
+jLabel2	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:CambiosCongelado	file:
+jLabel2	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:CambiosFrescos	file:
+jLabel2	CambiosPrincipal.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:CambiosPrincipal	file:
+jLabel2	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:CambiosRefrigerados	file:
 jLabel2	PC.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:PC	file:
 jLabel2	PF.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:PF	file:
 jLabel2	PR.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:PR	file:
 jLabel2	REPORTES.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:REPORTES	file:
+jLabel2	VReportesBafar.java	/^    private javax.swing.JLabel jLabel2;$/;"	f	class:VReportesBafar	file:
+jLabel3	CalcularPrecio.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:CalcularPrecio	file:
+jLabel3	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:CambiosCongelado	file:
+jLabel3	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:CambiosFrescos	file:
+jLabel3	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:CambiosRefrigerados	file:
 jLabel3	PC.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:PC	file:
 jLabel3	PF.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:PF	file:
 jLabel3	PR.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:PR	file:
+jLabel3	VReportesBafar.java	/^    private javax.swing.JLabel jLabel3;$/;"	f	class:VReportesBafar	file:
+jLabel4	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:CambiosCongelado	file:
+jLabel4	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:CambiosFrescos	file:
+jLabel4	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:CambiosRefrigerados	file:
 jLabel4	PC.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:PC	file:
 jLabel4	PF.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:PF	file:
 jLabel4	PR.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:PR	file:
+jLabel4	VReportesBafar.java	/^    private javax.swing.JLabel jLabel4;$/;"	f	class:VReportesBafar	file:
+jLabel5	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:CambiosCongelado	file:
+jLabel5	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:CambiosFrescos	file:
+jLabel5	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:CambiosRefrigerados	file:
 jLabel5	PC.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:PC	file:
 jLabel5	PF.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:PF	file:
 jLabel5	PR.java	/^    private javax.swing.JLabel jLabel5;$/;"	f	class:PR	file:
+jLabel6	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel6;$/;"	f	class:CambiosFrescos	file:
 jLabel6	PF.java	/^    private javax.swing.JLabel jLabel6;$/;"	f	class:PF	file:
-jLabel6	PR.java	/^    private javax.swing.JLabel jLabel6;$/;"	f	class:PR	file:
+jLabel7	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:CambiosCongelado	file:
+jLabel7	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:CambiosFrescos	file:
+jLabel7	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:CambiosRefrigerados	file:
 jLabel7	PC.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:PC	file:
 jLabel7	PF.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:PF	file:
 jLabel7	PR.java	/^    private javax.swing.JLabel jLabel7;$/;"	f	class:PR	file:
+jLabel8	CambiosCongelado.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:CambiosCongelado	file:
+jLabel8	CambiosFrescos.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:CambiosFrescos	file:
+jLabel8	CambiosRefrigerados.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:CambiosRefrigerados	file:
 jLabel8	PC.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:PC	file:
 jLabel8	PF.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:PF	file:
 jLabel8	PR.java	/^    private javax.swing.JLabel jLabel8;$/;"	f	class:PR	file:
-jMenu1	CP.java	/^    private javax.swing.JMenu jMenu1;$/;"	f	class:CP	file:
-jMenu10	CP.java	/^    private javax.swing.JMenu jMenu10;$/;"	f	class:CP	file:
-jMenu11	CP.java	/^    private javax.swing.JMenu jMenu11;$/;"	f	class:CP	file:
-jMenu12	CP.java	/^    private javax.swing.JMenu jMenu12;$/;"	f	class:CP	file:
-jMenu13	CP.java	/^    private javax.swing.JMenu jMenu13;$/;"	f	class:CP	file:
-jMenu14	CP.java	/^    private javax.swing.JMenu jMenu14;$/;"	f	class:CP	file:
-jMenu15	CP.java	/^    private javax.swing.JMenu jMenu15;$/;"	f	class:CP	file:
-jMenu16	CP.java	/^    private javax.swing.JMenu jMenu16;$/;"	f	class:CP	file:
-jMenu17	CP.java	/^    private javax.swing.JMenu jMenu17;$/;"	f	class:CP	file:
-jMenu18	CP.java	/^    private javax.swing.JMenu jMenu18;$/;"	f	class:CP	file:
-jMenu19	CP.java	/^    private javax.swing.JMenu jMenu19;$/;"	f	class:CP	file:
-jMenu2	CP.java	/^    private javax.swing.JMenu jMenu2;$/;"	f	class:CP	file:
-jMenu20	CP.java	/^    private javax.swing.JMenu jMenu20;$/;"	f	class:CP	file:
-jMenu21	CP.java	/^    private javax.swing.JMenu jMenu21;$/;"	f	class:CP	file:
-jMenu22	CP.java	/^    private javax.swing.JMenu jMenu22;$/;"	f	class:CP	file:
 jMenu23	CP.java	/^    private javax.swing.JMenu jMenu23;$/;"	f	class:CP	file:
-jMenu24	CP.java	/^    private javax.swing.JMenu jMenu24;$/;"	f	class:CP	file:
-jMenu26	CP.java	/^    private javax.swing.JMenu jMenu26;$/;"	f	class:CP	file:
 jMenu3	CP.java	/^    private javax.swing.JMenu jMenu3;$/;"	f	class:CP	file:
 jMenu4	CP.java	/^    private javax.swing.JMenu jMenu4;$/;"	f	class:CP	file:
 jMenu5	CP.java	/^    private javax.swing.JMenu jMenu5;$/;"	f	class:CP	file:
 jMenu6	CP.java	/^    private javax.swing.JMenu jMenu6;$/;"	f	class:CP	file:
 jMenu7	CP.java	/^    private javax.swing.JMenu jMenu7;$/;"	f	class:CP	file:
 jMenu8	CP.java	/^    private javax.swing.JMenu jMenu8;$/;"	f	class:CP	file:
-jMenu9	CP.java	/^    private javax.swing.JMenu jMenu9;$/;"	f	class:CP	file:
 jMenuBar1	CP.java	/^    private javax.swing.JMenuBar jMenuBar1;$/;"	f	class:CP	file:
 jMenuBar2	CP.java	/^    private javax.swing.JMenuBar jMenuBar2;$/;"	f	class:CP	file:
 jMenuBar3	CP.java	/^    private javax.swing.JMenuBar jMenuBar3;$/;"	f	class:CP	file:
 jMenuBar4	CP.java	/^    private javax.swing.JMenuBar jMenuBar4;$/;"	f	class:CP	file:
+jPanel1	Bajas.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:Bajas	file:
+jPanel1	Buscar.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:Buscar	file:
 jPanel1	PC.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:PC	file:
 jPanel1	PR.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:PR	file:
 jPanel1	REPORTES.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:REPORTES	file:
+jPanel1	VReportesBafar.java	/^    private javax.swing.JPanel jPanel1;$/;"	f	class:VReportesBafar	file:
+jScrollPane1	Bajas.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:Bajas	file:
+jScrollPane1	Buscar.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:Buscar	file:
+jScrollPane1	CalcularPrecio.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:CalcularPrecio	file:
+jScrollPane1	CambiosCongelado.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:CambiosCongelado	file:
+jScrollPane1	CambiosFrescos.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:CambiosFrescos	file:
+jScrollPane1	CambiosPrincipal.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:CambiosPrincipal	file:
+jScrollPane1	CambiosRefrigerados.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:CambiosRefrigerados	file:
+jScrollPane1	PC.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:PC	file:
+jScrollPane1	PF.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:PF	file:
+jScrollPane1	PR.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:PR	file:
 jScrollPane1	REPORTES.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:REPORTES	file:
+jScrollPane1	VReportesBafar.java	/^    private javax.swing.JScrollPane jScrollPane1;$/;"	f	class:VReportesBafar	file:
+jScrollPane2	Buscar.java	/^    private javax.swing.JScrollPane jScrollPane2;$/;"	f	class:Buscar	file:
 jTextArea1	REPORTES.java	/^    private javax.swing.JTextArea jTextArea1;$/;"	f	class:REPORTES	file:
-jTextField1	PC.java	/^    private javax.swing.JTextField jTextField1;$/;"	f	class:PC	file:
-jTextField1	PF.java	/^    private javax.swing.JTextField jTextField1;$/;"	f	class:PF	file:
-jTextField1	PR.java	/^    private javax.swing.JTextField jTextField1;$/;"	f	class:PR	file:
-jTextField1ActionPerformed	PC.java	/^    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField2	PC.java	/^    private javax.swing.JTextField jTextField2;$/;"	f	class:PC	file:
-jTextField2	PF.java	/^    private javax.swing.JTextField jTextField2;$/;"	f	class:PF	file:
-jTextField2	PR.java	/^    private javax.swing.JTextField jTextField2;$/;"	f	class:PR	file:
-jTextField2ActionPerformed	PC.java	/^    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField2ActionPerformed	PF.java	/^    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PF	file:
-jTextField3	PC.java	/^    private javax.swing.JTextField jTextField3;$/;"	f	class:PC	file:
-jTextField3	PF.java	/^    private javax.swing.JTextField jTextField3;$/;"	f	class:PF	file:
-jTextField3	PR.java	/^    private javax.swing.JTextField jTextField3;$/;"	f	class:PR	file:
-jTextField3ActionPerformed	PC.java	/^    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField4	PC.java	/^    private javax.swing.JTextField jTextField4;$/;"	f	class:PC	file:
-jTextField4	PF.java	/^    private javax.swing.JTextField jTextField4;$/;"	f	class:PF	file:
-jTextField4	PR.java	/^    private javax.swing.JTextField jTextField4;$/;"	f	class:PR	file:
-jTextField4ActionPerformed	PC.java	/^    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField4ActionPerformed	PR.java	/^    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PR	file:
-jTextField5	PC.java	/^    private javax.swing.JTextField jTextField5;$/;"	f	class:PC	file:
-jTextField5	PF.java	/^    private javax.swing.JTextField jTextField5;$/;"	f	class:PF	file:
-jTextField5	PR.java	/^    private javax.swing.JTextField jTextField5;$/;"	f	class:PR	file:
-jTextField5ActionPerformed	PC.java	/^    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField5ActionPerformed	PR.java	/^    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PR	file:
-jTextField6	PC.java	/^    private javax.swing.JTextField jTextField6;$/;"	f	class:PC	file:
-jTextField6	PF.java	/^    private javax.swing.JTextField jTextField6;$/;"	f	class:PF	file:
-jTextField6	PR.java	/^    private javax.swing.JTextField jTextField6;$/;"	f	class:PR	file:
-jTextField6ActionPerformed	PC.java	/^    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event/;"	m	class:PC	file:
-jTextField7	PF.java	/^    private javax.swing.JTextField jTextField7;$/;"	f	class:PF	file:
-jTextField7	PR.java	/^    private javax.swing.JTextField jTextField7;$/;"	f	class:PR	file:
 main	CP.java	/^    public static void main(String args[]) {$/;"	m	class:CP
 main	REPORTES.java	/^    public static void main(String args[]) {$/;"	m	class:REPORTES
 main	testPutaCola.java	/^    public static void main(String args[]) {$/;"	m	class:testPutaCola
 mantoEquipo	OTROS_COSTOS.java	/^    public final static double mantoEquipo=200;$/;"	f	interface:OTROS_COSTOS
 max	ControlProducto.java	/^    private int max;$/;"	f	class:ControlProducto	file:
 nAF	OTROS_COSTOS.java	/^    public final static double depreciaciónAF=0.20;$/;"	f	interface:OTROS_COSTOS
+nlote	CambiosCongelado.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:CambiosCongelado	file:
+nlote	CambiosFrescos.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:CambiosFrescos	file:
+nlote	CambiosRefrigerados.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:CambiosRefrigerados	file:
+nlote	PC.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:PC	file:
+nlote	PF.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:PF	file:
+nlote	PR.java	/^    private javax.swing.JTextField nlote;$/;"	f	class:PR	file:
+nombre	Bajas.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:Bajas	file:
+nombre	Buscar.java	/^    private javax.swing.JButton nombre;$/;"	f	class:Buscar	file:
+nombre	CambiosCongelado.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:CambiosCongelado	file:
+nombre	CambiosFrescos.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:CambiosFrescos	file:
+nombre	CambiosPrincipal.java	/^    private javax.swing.JTextPane nombre;$/;"	f	class:CambiosPrincipal	file:
+nombre	CambiosRefrigerados.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:CambiosRefrigerados	file:
+nombre	PC.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:PC	file:
+nombre	PF.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:PF	file:
+nombre	PR.java	/^    private javax.swing.JTextField nombre;$/;"	f	class:PR	file:
 nombre	Producto.java	/^    private String nombre;$/;"	f	class:Producto	file:
+nombreActionPerformed	Buscar.java	/^    private void nombreActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_nomb/;"	m	class:Buscar	file:
 numLote	Producto.java	/^    private int numLote;$/;"	f	class:Producto	file:
 objects	quickSort.java	/^    Producto objects[];$/;"	f	class:quickSort
+pais	CambiosFrescos.java	/^    private javax.swing.JTextField pais;$/;"	f	class:CambiosFrescos	file:
+pais	PF.java	/^    private javax.swing.JTextField pais;$/;"	f	class:PF	file:
 paisOrigen	ProductoFresco.java	/^    private String paisOrigen;$/;"	f	class:ProductoFresco	file:
 precioVenta	Producto.java	/^    abstract public double precioVenta();$/;"	m	class:Producto
 precioVenta	ProductoCongelado.java	/^    public double precioVenta() {$/;"	m	class:ProductoCongelado
@@ -240,12 +356,52 @@ printArray	burbujaMetodo.java	/^    private String printArray(Producto[] objs) {
 prods	burbujaMetodo.java	/^    Producto[] prods;$/;"	f	class:burbujaMetodo
 prods	busquedaBinaria.java	/^    Producto[] prods;$/;"	f	class:busquedaBinaria
 prods	insertMetodo.java	/^    Producto[] prods;$/;"	f	class:insertMetodo
+producto	Bajas.java	/^    ControlProducto producto;$/;"	f	class:Bajas
+producto	CalcularPrecio.java	/^    ControlProducto producto;$/;"	f	class:CalcularPrecio
+producto	CambiosCongelado.java	/^    ControlProducto producto;$/;"	f	class:CambiosCongelado
+producto	CambiosFrescos.java	/^    ControlProducto producto;$/;"	f	class:CambiosFrescos
+producto	CambiosRefrigerados.java	/^    ControlProducto producto;$/;"	f	class:CambiosRefrigerados
+producto	PC.java	/^    ControlProducto producto;$/;"	f	class:PC
+producto	PF.java	/^    ControlProducto producto;$/;"	f	class:PF
+producto	PR.java	/^    ControlProducto producto;$/;"	f	class:PR
+producto	VReportesBafar.java	/^    ControlProducto producto;$/;"	f	class:VReportesBafar
+productos	Buscar.java	/^    ControlProducto productos;$/;"	f	class:Buscar
+productos	CP.java	/^    ControlProducto  productos;$/;"	f	class:CP
+productos	CambiosPrincipal.java	/^    ControlProducto productos;$/;"	f	class:CambiosPrincipal
 productos	ControlProducto.java	/^    private Producto productos[];$/;"	f	class:ControlProducto	file:
 qs	quickSort.java	/^    private static void qs(Producto[] array, int limInferior, int limSuperior) {$/;"	m	class:quickSort	file:
 quickSort	quickSort.java	/^    quickSort(Producto objects[]) {$/;"	m	class:quickSort
 quickSort	quickSort.java	/^class quickSort {$/;"	c
 quicksort	quickSort.java	/^    private void quicksort(Producto[] array) {$/;"	m	class:quickSort	file:
 readArray	SaveRecoverSystem.java	/^    public Producto[] readArray() throws IOException, ClassNotFoundException,FileNotFoundExcepti/;"	m	class:SaveRecoverSystem
+realizar	Bajas.java	/^    private javax.swing.JButton realizar;$/;"	f	class:Bajas	file:
+realizar	CambiosFrescos.java	/^    private javax.swing.JButton realizar;$/;"	f	class:CambiosFrescos	file:
+realizar	CambiosRefrigerados.java	/^    private javax.swing.JButton realizar;$/;"	f	class:CambiosRefrigerados	file:
+realizar	PF.java	/^    private javax.swing.JButton realizar;$/;"	f	class:PF	file:
+realizar	PR.java	/^    private javax.swing.JButton realizar;$/;"	f	class:PR	file:
+realizarActionPerformed	Bajas.java	/^    private void realizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:Bajas	file:
+realizarActionPerformed	CambiosFrescos.java	/^    private void realizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CambiosFrescos	file:
+realizarActionPerformed	CambiosRefrigerados.java	/^    private void realizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CambiosRefrigerados	file:
+realizarActionPerformed	PF.java	/^    private void realizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:PF	file:
+realizarActionPerformed	PR.java	/^    private void realizarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:PR	file:
+regresar	Bajas.java	/^    private javax.swing.JButton regresar;$/;"	f	class:Bajas	file:
+regresar	Buscar.java	/^    private javax.swing.JButton regresar;$/;"	f	class:Buscar	file:
+regresar	CalcularPrecio.java	/^    private javax.swing.JButton regresar;$/;"	f	class:CalcularPrecio	file:
+regresar	CambiosFrescos.java	/^    private javax.swing.JButton regresar;$/;"	f	class:CambiosFrescos	file:
+regresar	CambiosPrincipal.java	/^    private javax.swing.JButton regresar;$/;"	f	class:CambiosPrincipal	file:
+regresar	CambiosRefrigerados.java	/^    private javax.swing.JButton regresar;$/;"	f	class:CambiosRefrigerados	file:
+regresar	PF.java	/^    private javax.swing.JButton regresar;$/;"	f	class:PF	file:
+regresar	PR.java	/^    private javax.swing.JButton regresar;$/;"	f	class:PR	file:
+regresar	VReportesBafar.java	/^    private javax.swing.JButton regresar;$/;"	f	class:VReportesBafar	file:
+regresarActionPerformed	Bajas.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:Bajas	file:
+regresarActionPerformed	Buscar.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:Buscar	file:
+regresarActionPerformed	CalcularPrecio.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CalcularPrecio	file:
+regresarActionPerformed	CambiosFrescos.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CambiosFrescos	file:
+regresarActionPerformed	CambiosPrincipal.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CambiosPrincipal	file:
+regresarActionPerformed	CambiosRefrigerados.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:CambiosRefrigerados	file:
+regresarActionPerformed	PF.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:PF	file:
+regresarActionPerformed	PR.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:PR	file:
+regresarActionPerformed	VReportesBafar.java	/^    private void regresarActionPerformed(java.awt.event.ActionEvent evt) {\/\/GEN-FIRST:event_re/;"	m	class:VReportesBafar	file:
 rentaMaquinaria	OTROS_COSTOS.java	/^    public final static double rentaMaquinaria=1000;$/;"	f	interface:OTROS_COSTOS
 reporteAscendenteBurbuja	ControlProducto.java	/^    public String reporteAscendenteBurbuja() {$/;"	m	class:ControlProducto
 reporteAscendenteQuickSort	ControlProducto.java	/^    public String reporteAscendenteQuickSort() {$/;"	m	class:ControlProducto
@@ -254,7 +410,12 @@ reporteCategoriasDescendienteInsert	ControlProducto.java	/^    public String rep
 reporteDescendenteBurbuja	ControlProducto.java	/^    public String reporteDescendenteBurbuja() {$/;"	m	class:ControlProducto
 reporteDescendenteQuickSort	ControlProducto.java	/^    public String reporteDescendenteQuickSort() {$/;"	m	class:ControlProducto
 reporteGeneral	ControlProducto.java	/^    public String reporteGeneral() {$/;"	m	class:ControlProducto
+reportes	CP.java	/^    private javax.swing.JMenu reportes;$/;"	f	class:CP	file:
+reportesMouseClicked	CP.java	/^    private void reportesMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_report/;"	m	class:CP	file:
 safeDelete	ControlProducto.java	/^    private void safeDelete(int index) {$/;"	m	class:ControlProducto	file:
+salir	CP.java	/^    private javax.swing.JMenu salir;$/;"	f	class:CP	file:
+salirMouseClicked	CP.java	/^    private void salirMouseClicked(java.awt.event.MouseEvent evt) {\/\/GEN-FIRST:event_salirMous/;"	m	class:CP	file:
+save	ControlProducto.java	/^    public void save() {$/;"	m	class:ControlProducto
 saveArray	SaveRecoverSystem.java	/^    public void saveArray(Producto[] array) throws IOException, FileNotFoundException {$/;"	m	class:SaveRecoverSystem
 setCodigo	Producto.java	/^    public void setCodigo(int codigo) {$/;"	m	class:Producto
 setCodigoSupAlimentaria	ProductoRefrigerado.java	/^    public void setCodigoSupAlimentaria(int codigoSupAlimentaria) {$/;"	m	class:ProductoRefrigerado
@@ -268,11 +429,23 @@ setTempCongelacion	ProductoCongelado.java	/^    public void setTempCongelacion(f
 srs	ControlProducto.java	/^    SaveRecoverSystem srs;$/;"	f	class:ControlProducto
 swap	burbujaMetodo.java	/^    private void swap(Producto productos[], int startposswap) {$/;"	m	class:burbujaMetodo	file:
 tempCongelacion	ProductoCongelado.java	/^    private float tempCongelacion;$/;"	f	class:ProductoCongelado	file:
-test	ControlProducto.java	/^    public void test() {$/;"	m	class:ControlProducto
+temperatura	CambiosCongelado.java	/^    private javax.swing.JTextField temperatura;$/;"	f	class:CambiosCongelado	file:
+temperatura	PC.java	/^    private javax.swing.JTextField temperatura;$/;"	f	class:PC	file:
 testPutaCola	testPutaCola.java	/^class testPutaCola {$/;"	c
+texto	Bajas.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:Bajas	file:
+texto	Buscar.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:Buscar	file:
+texto	CalcularPrecio.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:CalcularPrecio	file:
+texto	CambiosCongelado.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:CambiosCongelado	file:
+texto	CambiosFrescos.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:CambiosFrescos	file:
+texto	CambiosRefrigerados.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:CambiosRefrigerados	file:
+texto	PC.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:PC	file:
+texto	PF.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:PF	file:
+texto	PR.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:PR	file:
+texto	VReportesBafar.java	/^    private javax.swing.JTextArea texto;$/;"	f	class:VReportesBafar	file:
 toString	Producto.java	/^    public String toString() {$/;"	m	class:Producto
 toString	ProductoCongelado.java	/^    public String toString() {$/;"	m	class:ProductoCongelado
 toString	ProductoFresco.java	/^    public String toString() {$/;"	m	class:ProductoFresco
 toString	ProductoRefrigerado.java	/^    public String toString() {$/;"	m	class:ProductoRefrigerado
 utilities	utilities.java	/^public class utilities {$/;"	c
 valorAF	OTROS_COSTOS.java	/^    public final static double valorAF=50000;$/;"	f	interface:OTROS_COSTOS
+variable	Buscar.java	/^    private javax.swing.JTextPane variable;$/;"	f	class:Buscar	file:

@@ -41,7 +41,7 @@ public class burbujaMetodo {
         boolean resEval = false;
         switch(field) {
         case NOMBRE:
-            resEval = productos[startpos-1].getCostoProduccion() > productos[startpos].getCostoProduccion();
+            resEval = productos[startpos-1].getCostoProduccion() < productos[startpos].getCostoProduccion();
             break;
         }
         return inverse? !resEval : resEval;

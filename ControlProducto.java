@@ -33,17 +33,22 @@ public class ControlProducto {
 
     public String buscarPorCodigo(int codigo) {
         busquedaBinaria bb = new busquedaBinaria(productos);
-          int index = bb.buscarBinariamenteentePerCodigo(codigo);
+        int index = bb.buscarBinariamenteentePerCodigo(codigo);
         if(index == -1)return "Producto no encontrados";
         return productos[index].toString();
     }
-    public Producto findbyName(String nombre){
+    public Producto findbyName(String nombre) {
         busquedaBinaria bb = new busquedaBinaria(productos);
         return productos[bb.buscarBinariamenteentePerNombre(nombre)];
+
+    }
+    public Producto findbyCode(int code) {
+        busquedaBinaria bb = new busquedaBinaria(productos);
+        return productos[bb.buscarBinariamenteentePerCodigo(code)];
     }
 
-    //acuerdeze solo la superclase atributos, no los base, los de superclasepoderosa, ya tu das el  tratamiento de copia de datos desde la interfas de antiguos a nuevos
-    //WAWAWAWAWAWA ALERTA SISMICA ALERTA SISMICA
+//acuerdeze solo la superclase atributos, no los base, los de superclasepoderosa, ya tu das el  tratamiento de copia de datos desde la interfas de antiguos a nuevos
+//WAWAWAWAWAWA ALERTA SISMICA ALERTA SISMICA
     public String cambioProducto(String nombre, Producto nuevoProducto) {
         busquedaBinaria bb = new busquedaBinaria(productos);
         int index = bb.buscarBinariamenteentePerNombre(nombre);
@@ -68,7 +73,7 @@ public class ControlProducto {
         return total;
     }
 
-    //El producto lo creas con la info de la interfas fresquesita y lo pasas wuawuawua
+//El producto lo creas con la info de la interfas fresquesita y lo pasas wuawuawua
     public String altas(Producto  objeto) {
         int index = indexToAddItemFrom(productos);
         if(index == ERROR)return "no se puede añadir";
@@ -92,7 +97,7 @@ public class ControlProducto {
             }
             cont--;
         }
-        
+
     }
 
     public String reporteGeneral() {
