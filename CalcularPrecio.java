@@ -124,7 +124,7 @@ public class CalcularPrecio extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_regresarActionPerformed
 
     private void codigo_precioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codigo_precioActionPerformed
-        String cadena ="Total del producto: "+producto.findbyCode(Integer.parseInt(codigo.getText())).getNombre()+" : "+ producto.calcularPrecioVentaPorCodigo(Integer.parseInt(codigo.getText()));
+        String cadena ="Total del producto: "+producto.findbyName(codigo.getText()).getNombre()+" : "+ producto.calcularPrecioVentaPorCodigo(Integer.parseInt(codigo.getText()));
         texto.setText(cadena);
     }//GEN-LAST:event_codigo_precioActionPerformed
 

@@ -31,6 +31,7 @@ public class ControlProducto {
         return productos[index].toString();
     }
 
+    //Depreciado
     public String buscarPorCodigo(int codigo) {
         busquedaBinaria bb = new busquedaBinaria(productos);
         int index = bb.buscarBinariamenteentePerCodigo(codigo);
@@ -42,6 +43,7 @@ public class ControlProducto {
         return productos[bb.buscarBinariamenteentePerNombre(nombre)];
 
     }
+    //Depreciado
     public Producto findbyCode(int code) {
         busquedaBinaria bb = new busquedaBinaria(productos);
         return productos[bb.buscarBinariamenteentePerCodigo(code)];
