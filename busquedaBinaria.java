@@ -36,6 +36,7 @@ class busquedaBinaria {
         if (array.length == 0)
             return -1;
         int mitad, inf = 0, sup = utilities.initLength(array) - 1;
+        
         do {
             mitad = (inf + sup) / 2;
             if (busqueda > array[mitad].getCodigo())

@@ -59,9 +59,9 @@ public class ControlProducto {
         return "Producto actualizado correctamente";
     }
 
-    public double calcularPrecioVentaPorCodigo(int codigo) {
+    public double calcularPrecioVentaPorNombre(String nombre) {
         busquedaBinaria bb = new busquedaBinaria(productos);
-        int index = bb.buscarBinariamenteentePerCodigo(codigo);
+        int index = bb.buscarBinariamenteentePerNombre(nombre);
         if(index==ERROR)return ERROR;//fua epico
         return productos[index].precioVenta();
     }

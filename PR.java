@@ -190,7 +190,7 @@ public class PR extends javax.swing.JInternalFrame {
             Integer.parseInt(nlote.getText()), Double.parseDouble(costo.getText()));
 
         texto.setText(producto.altas(Altaproducto));
-        String cadena =producto.buscarPorCodigo(Integer.parseInt(codigo.getText()))+" se agrego exitosamente";
+        String cadena=producto.buscarPorNombre((nombre.getText()))+" se agrego exitosamente";
         texto.append("\n"+cadena);
         producto.cambioProducto(nombre.getText(), Altaproducto);
     }//GEN-LAST:event_realizarActionPerformed

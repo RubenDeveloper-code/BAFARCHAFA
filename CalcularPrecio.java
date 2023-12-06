@@ -29,22 +29,22 @@ public class CalcularPrecio extends javax.swing.JInternalFrame {
         codigo = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         texto = new javax.swing.JTextArea();
-        codigo_precio = new javax.swing.JButton();
+        nombre = new javax.swing.JButton();
         general = new javax.swing.JButton();
         regresar = new javax.swing.JButton();
 
         jLabel1.setText("CALCULAR PRECIO");
 
-        jLabel3.setText("CODIGO");
+        jLabel3.setText("NOMBRE");
 
         texto.setColumns(20);
         texto.setRows(5);
         jScrollPane1.setViewportView(texto);
 
-        codigo_precio.setText("Codigo");
-        codigo_precio.addActionListener(new java.awt.event.ActionListener() {
+        nombre.setText("Nombre");
+        nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                codigo_precioActionPerformed(evt);
+                nombreActionPerformed(evt);
             }
         });
 
@@ -67,48 +67,48 @@ public class CalcularPrecio extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                          .addContainerGap()
-                                          .addComponent(jLabel3)
-                                          .addGap(18, 18, 18)
-                                          .addComponent(codigo))
-                                .addGroup(layout.createSequentialGroup()
-                                          .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                  .addGroup(layout.createSequentialGroup()
-                                                          .addGap(149, 149, 149)
-                                                          .addComponent(jLabel1))
-                                                  .addGroup(layout.createSequentialGroup()
-                                                          .addContainerGap()
-                                                          .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                          .addGap(0, 9, Short.MAX_VALUE)))
-                      .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(codigo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(149, 149, 149)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 9, Short.MAX_VALUE)))
+                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                      .addGap(37, 37, 37)
-                      .addComponent(general)
-                      .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                      .addComponent(codigo_precio)
-                      .addGap(51, 51, 51)
-                      .addComponent(regresar)
-                      .addGap(42, 42, 42))
+                .addGap(37, 37, 37)
+                .addComponent(general)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(nombre)
+                .addGap(51, 51, 51)
+                .addComponent(regresar)
+                .addGap(42, 42, 42))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                      .addContainerGap()
-                      .addComponent(jLabel1)
-                      .addGap(18, 18, 18)
-                      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel3)
-                                .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                      .addGap(18, 18, 18)
-                      .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                      .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
-                      .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(codigo_precio)
-                                .addComponent(regresar)
-                                .addComponent(general))
-                      .addGap(24, 24, 24))
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombre)
+                    .addComponent(regresar)
+                    .addComponent(general))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -123,18 +123,18 @@ public class CalcularPrecio extends javax.swing.JInternalFrame {
         this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
 
-    private void codigo_precioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codigo_precioActionPerformed
-        String cadena ="Total del producto: "+producto.findbyName(codigo.getText()).getNombre()+" : "+ producto.calcularPrecioVentaPorCodigo(Integer.parseInt(codigo.getText()));
+    private void nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreActionPerformed
+        String cadena ="Total del producto: "+producto.findbyName(codigo.getText()).getNombre()+" : "+ producto.calcularPrecioVentaPorNombre(codigo.getText());
         texto.setText(cadena);
-    }//GEN-LAST:event_codigo_precioActionPerformed
+    }//GEN-LAST:event_nombreActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField codigo;
-    private javax.swing.JButton codigo_precio;
     private javax.swing.JButton general;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton nombre;
     private javax.swing.JButton regresar;
     private javax.swing.JTextArea texto;
     // End of variables declaration//GEN-END:variables
